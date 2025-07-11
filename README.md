@@ -97,7 +97,6 @@ The system follows a microservices architecture pattern with four independent se
 graph TD
     %% External Components
     CSV[CSV Files<br/>Weather Data] --> DIS
-    API_CLIENTS[REST API<br/>Clients] --> DDS
     
     %% Infrastructure Components
     KAFKA[(Kafka Broker<br/>weather-data topic)]
@@ -119,14 +118,33 @@ graph TD
     %% Service Interactions
     DPS -->|Analytics Results| DB
     
+    %% Visualization & Dashboard Layer
+    subgraph DASHBOARD["🎨 VISUALIZATION & DASHBOARD LAYER"]
+        WEB[🌐 Web Dashboard<br/>React/Angular Frontend<br/>Real-time Charts & Maps]
+        MOBILE[📱 Mobile App<br/>Weather Insights<br/>Push Notifications]
+        ADMIN[⚙️ Admin Panel<br/>System Monitoring<br/>Data Management]
+        REPORTS[📊 Report Portal<br/>PDF Generation<br/>Scheduled Reports]
+    end
+    
+
+    
+
+    
+    %% Dashboard Connections
+    DDS -->|REST API| DASHBOARD
+    
+
+    
     %% Styling for different component types
     classDef service fill:#e1f5fe,stroke:#01579b,stroke-width:2px
     classDef infrastructure fill:#f3e5f5,stroke:#4a148c,stroke-width:2px
     classDef external fill:#e8f5e8,stroke:#1b5e20,stroke-width:2px
+    classDef dashboard fill:#fff3e0,stroke:#f57c00,stroke-width:2px
     
     class DIS,DSS,DPS,DDS service
     class KAFKA,DB infrastructure
-    class CSV,API_CLIENTS external
+    class CSV external
+    class WEB,MOBILE,ADMIN,REPORTS dashboard
 ```
 
 ## Service Components
