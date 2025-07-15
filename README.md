@@ -475,3 +475,12 @@ curl http://localhost:8083/api/analytics/report
 - Application logs: Console output or configured log files
 - Docker logs: `docker-compose logs <service-name>`
 - Kafka UI: http://localhost:8080 for topic monitoring
+- 
+
+
+#### FINALIZATION PHASE OF THE PROJECTS
+
+
+According this project author show that this project fullfill technical requirements because this application it goes to all stages on the processing of the batch data
+
+The batch data of this project was extracted from Tanzania weather batch data source by he microservices of Ingest Data services, under this services the data are collected by the Tools which are Called ETL, this tools are used to extract tranform and load data into another microservices which are Data Storage services before transfered date into another microservices of Data analysis services for processing the batch data due to that fact this Application was fulfil the technical requirement of the system.
