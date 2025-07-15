@@ -493,7 +493,43 @@ The which are built is  reliable, scalable, and maintainable because it consider
 database transactions, and health checks in the system which will anable to check for reliability and the system will be scaled independently to maintain scalability and the system had clear responsiblity which will anable to make maintanance of the system.
 
 according this project the system will take the following measure to maintain data security, governance and protection which are 
+
 ● Basic database authentication 
+
 ● Services isolated in Docker containers 
+
 ● Network separation through Docker networks 
+
+
+The other things which can be added into the system which can improve the security of the system are
+
+● Proper authentication
+
+● Encrypt everything (database, service communication) 
+
+● Rate limiting on APIs 
+
+● Actual monitoring and alerting 
+
+● Backup and recovery procedures (because disasters happen) 
+
+The next project to improve workflow have to use the following flow
+
+●Data ingestion
+
+●Data Processing
+
+●Data Output and 
+
+●Error Handling
+
+
+The three most valuable technical skills I learn learned dur
+ing the project are 
+
+● programing language which are Java, Python
+
+● Large scale Data Processing 
+
+● Data Storage which include PostgreSQL
 
