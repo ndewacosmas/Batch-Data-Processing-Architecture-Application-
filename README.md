@@ -484,3 +484,16 @@ curl http://localhost:8083/api/analytics/report
 According this project author show that this project fullfill technical requirements because this application it goes to all stages on the processing of the batch data
 
 The batch data of this project was extracted from Tanzania weather batch data source by he microservices of Ingest Data services, under this services the data are collected by the Tools which are Called ETL, this tools are used to extract tranform and load data into another microservices which are Data Storage services before transfered date into another microservices of Data analysis services for processing the batch data due to that fact this Application was fulfil the technical requirement of the system.
+
+Building this thing was honestly more challenging than I expected. When I started, I thought 
+"how hard can it be to process some weather data?" Turns out, quite hard when you're dealing 
+with 2.3 million records and trying to make everything work together
+
+The which are built is  reliable, scalable, and maintainable because it consider all requirement by adding proper error handling, 
+database transactions, and health checks in the system which will anable to check for reliability and the system will be scaled independently to maintain scalability and the system had clear responsiblity which will anable to make maintanance of the system.
+
+according this project the system will take the following measure to maintain data security, governance and protection which are 
+● Basic database authentication 
+● Services isolated in Docker containers 
+● Network separation through Docker networks 
+
