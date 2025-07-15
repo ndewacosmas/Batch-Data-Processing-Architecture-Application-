@@ -533,3 +533,10 @@ ing the project are
 
 ● Data Storage which include PostgreSQL
 
+The three most valuable “soft” skills I learned during the project are
+
+● Communication which includes clear communication, collaboration and documentation
+
+● Pro
+
+
